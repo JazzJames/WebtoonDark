@@ -1,0 +1,20 @@
+#+STARTUP: nofold
+#+HTML: <div align="center">
+
+* Dark WebToons
+Dark Style/Mode for [[https://webtoons.com][Webtoons]].
+
+[[https://github.com/JazzJames/WebtoonDark/raw/main/webtoondark.user.styl][https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=flat]]
+
+#+HTML: <img src="https://raw.githubusercontent.com/JazzJames/WebtoonDark/main/images/main.png" width="100%"/>
+
+/WebToon's Page./
+
+#+HTML: </div>
+
+** Installation
+You have to install [[https://add0n.com/stylus.html][Stylus]] and then click on the install link below.
+
+[[https://github.com/JazzJames/WebtoonDark/raw/main/webtoondark.user.styl][https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=flat]]
+
+You can also, just install it through the raw .css file with [[https://github.com/JazzJames/WebtoonDark/raw/main/webtoondark.user.css][this link]].
