@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/JazzJames/WebtoonDark
 @supportURL   https://github.com/JazzJames/WebtoonDark/issues
 @updateURL    https://raw.githubusercontent.com/JazzJames/WebtoonDark/main/webtoondark.user.css
-@version      1.0.8
+@version      1.0.9
 ==/UserStyle== */
 
 @-moz-document domain("webtoons.com"){
@@ -90,6 +90,9 @@ a{
 	-webkit-filter: invert(100%);filter: invert(100%)}
 
 /*COMMENTS*/
+#cbox_module {
+	padding: 10px;
+	border-radius: 10px}
 .u_cbox,
 .u_cbox .u_cbox_recomm_set .u_cbox_btn_recomm,
 .u_cbox .u_cbox_recomm_set .u_cbox_btn_unrecomm{
@@ -164,7 +167,8 @@ a{
 	color:var(--lgray)}
 .detail_body.banner .detail_lst,
 .detail_body .detail_lst li:hover,
-.detail_body{
+.detail_body,
+.spi_area .bx{
 	background:var(--dgray)}
 .detail_body .detail_lst{
 	border-right: 2px solid var(--dgray)}
@@ -200,7 +204,8 @@ a{
 .recently_lst .tit,
 .snb a{
 	color:var(--lgray)}
-.account_wrap{
+.account_wrap,
+.sta .lk_creators a::before{
 	-webkit-filter: invert(100%);filter: invert(100%)}
 
 /*DISCOVER*/
@@ -220,7 +225,14 @@ a{
 	color:var(--lgray);
 	border:1px solid var(--vdgray)}
 .aside_area,
-.creator_cont .more{
+.creator_cont .more,
+.creator_hub_wrap.started .publish_step .step1::before,
+.creator_hub_wrap.started .publish_step .step2::before,
+.creator_hub_wrap.started .publish_step .step3::before,
+.creator_hub_wrap.started .publish_step .step4::before,
+.creator_hub_wrap.started .publish_step .step5::before,
+.creator_hub_wrap.started .publish_step .step6::before,
+.creator_hub_wrap.started .publish_step .step7::before{
 	-webkit-filter: invert(100%);filter: invert(100%)}
 
 /*YOUMAYALSOLIKE*/
