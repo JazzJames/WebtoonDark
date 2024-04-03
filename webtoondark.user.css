@@ -6,309 +6,577 @@
 @homepageURL  https://github.com/JazzJames/WebtoonDark
 @supportURL   https://github.com/JazzJames/WebtoonDark/issues
 @updateURL    https://raw.githubusercontent.com/JazzJames/WebtoonDark/main/webtoondark.user.css
-@version      1.0.9
+@version      1.1.0
 ==/UserStyle== */
+@-moz-document domain("webtoons.com") {
+	:root {
+		--lgray: #cbcbcb;
+		--mgray: #777;
+		--dgray: #0b0b0c;
+		--vdgray: #2a2a2a;
+		--webtoons: #00dc64
+	}
 
-@-moz-document domain("webtoons.com"){
-:root{
-    --lgray:#cbcbcb;
-    --mgray:#777;
-    --black:#000;
-    --dgray:#0b0b0c;
-    --vdgray:#2a2a2a;
-    --white:#fff}
-	
-.body,#header{
-	background:var(--dgray)}
-	
-html:not(.__lt-dummy-1):not(.__lt-dummy-2):not(.__lt-dummy-3):not(.__lt-dummy-4):not(.__lt-dummy-5):not(.__lt-dummy-6):not(.__lt-dummy-7){
-	background:var(--black)}
-#content{
-	background:var(--black)!important}
-.daily_tab_wrap{
-    background: var(--dgray);
-    border-top:0px;
-    border-bottom:0px}
-.daily_tab li .btn_daily{
-	color:var(--lgray)}
-#header{
-	color:var(--lgray)}
-a{
-	color:var(--mgray)}
-.sta .login{
-	background:var(--dgray);color:var(--lgray);border:1px solid var(--black)}
-.main_daily_wrap{
-	background: var(--black)}
-.card-item .card-front{
-	background:var(--dgray)}
-.main_hotnew_wrap{
-	border-top: 1px solid var(--dgray);
-	background: var(--black)}
-.main_hotnew h2{
-	color:var(--lgray)}
-.main_genre_wrap{
-	background: var(--black);
-	border-top: 1px solid var(--dgray)}
-.btn_search,
-.recently_area .menu{
-	-webkit-filter: invert(100%);filter: invert(100%)}
+	.body,
+	#header,
+	.snb_sub_genre {
+		background: var(--dgray)
+	}
 
-/*MOST POPULAR*/
-.lst_type1{
-	border-bottom:1px solid var(--vdgray)}
-.lst_type1 li{
-	border-top: 1px solid var(--vdgray)}
-.lst_type1 .info_area .author{
-	color:var(--mgray)}
+	html:not(.__lt-dummy-1):not(.__lt-dummy-2):not(.__lt-dummy-3):not(.__lt-dummy-4):not(.__lt-dummy-5):not(.__lt-dummy-6):not(.__lt-dummy-7) {
+		background: black
+	}
 
-/*CANVAS*/
-.main_challenge_wrap{
-	border-top:1px solid var(--dgray)}
-.main_challenge{
-	background:var(--dgray)}
-.main_challenge .title_area{
-	color:var(--lgray)}
-.ly_lst_genre{
-	background:var(--dgray);
-	border:1px solid var(--vdgray)}
+	#content {
+		background: black !important
+	}
 
-/*BOTTOM FOOTER*/
-#footer{
-	background:var(--black);
-	border-top:1px solid var(--dgray)}
-.foot_app{
-	background:var(--black);
-	border-bottom:1px solid var(--dgray)}
-.foot_app .foot_down_msg .txt{
-	color:var(--lgray)}
-.notice_area{
-	background:var(--black);
-	border-bottom:1px solid var(--dgray)}
-.language .lk_lang,.language .ly_lang{
-	background:var(--black)}
-.ico_arr3,.foot_sns{
-	-webkit-filter: invert(100%);filter: invert(100%)}
+	.daily_tab_wrap {
+		background: var(--dgray);
+		border-top: 0px;
+		border-bottom: 0px
+	}
 
-/*COMMENTS*/
-#cbox_module {
-	padding: 10px;
-	border-radius: 10px}
-.u_cbox,
-.u_cbox .u_cbox_recomm_set .u_cbox_btn_recomm,
-.u_cbox .u_cbox_recomm_set .u_cbox_btn_unrecomm{
-	background:var(--dgray)}
-.u_cbox_title,.u_cbox .u_cbox_name,
-.u_cbox .u_cbox_paginate .u_cbox_page{
-	color:var(--lgray)}
-.u_cbox .u_cbox_write .u_cbox_inbox .u_cbox_text{
-	background-color:var(--vdgray);
-	color:var(--lgray)}
-.u_cbox .u_cbox_btn_upload{
-	background:var(--mgray)}
-.u_cbox .u_cbox_write .u_cbox_inbox{
-	background-color:var(--vdgray)}
-.u_cbox .u_cbox_comment_box,.u_cbox .u_cbox_sort{
-	border-bottom: 1px solid var(--vdgray)}
-.u_cbox .u_cbox_paginate .u_cbox_next .u_cbox_ico_page{
-	-webkit-filter: invert(100%);filter: invert(100%)}
+	.daily_tab li .btn_daily {
+		color: var(--lgray)
+	}
 
-/*CREATORS NOTE*/
-.comment_area .creator_note{
-	border-bottom: 1px solid var(--vdgray)}
-.comment_area .creator_note h2{
-	color:var(--white)}
+	#header {
+		color: var(--lgray)
+	}
 
-/*OTHER EPISODES*/
-.episode_area{
-	background:var(--vdgray)}
-.episode_lst ul .mask{
-	display:none}
+	a {
+		color: var(--mgray)
+	}
 
-/*BUTTONS AND TXT STRINGS*/
-.spi_area .bx,.btn_top,
-.lst_type1 .ranking_top .pic_area,.lst_type1 .num_ranking,
-.sta .lk_creators a::before,
-.viewer_lst .day_info,
-.ranking_lst.viewer .title_area h2 a,
-.ranking_lst.viewer .title_area h2 span,
-.viewer .challenge_spot_inner h3,
-.ranking_lst.top .title_area h2,
-.ranking_lst .title_area h2 a,
-.ranking_lst .title_area h2 span{
-	color:var(--lgray)}
-.viewer .challenge_spot{
-	border-top:1px solid var(--dgray)}
-.daily_card_item .subj{
-	color:var(--black)}
-.daily_head{
-	color:var(--lgray);
-	border-bottom: 1px solid var(--vdgray)}
-.lst_type1 .ranking_top a,
-.detail_body .detail_lst li > a:hover{
-	background:var(--black)}
-.search_area{
-	-webkit-filter: invert(100%);filter: invert(100%)}
+	.sta .login {
+		background: var(--dgray);
+		color: var(--lgray);
+		border: 1px solidblack
+	}
 
-/*COMIC LIST PAGE*/
-.detail_other.recommnd h2,
-.aside.detail .grade_area .cnt,
-.aside.detail .day_info,
-.aside.detail .summary,
-.paginate a,
-.paginate.v2{
-	color:var(--lgray)}
-.aside.detail{
-	border-left:2px solid var(--vdgray);
-	background:var(--dgray);
-	color:var(--lgray)}
-.detail_body .detail_install_app{
-	border-top:1px solid var(--vdgray);
-	background:var(--dgray);
-	color:var(--lgray)}
-.detail_body.banner .detail_lst,
-.detail_body .detail_lst li:hover,
-.detail_body,
-.spi_area .bx{
-	background:var(--dgray)}
-.detail_body .detail_lst{
-	border-right: 2px solid var(--dgray)}
-.detail_body .detail_lst li:first-child{
-	border-top: 1px solid var(--vdgray)}
-.detail_body .detail_lst li{
-	border-bottom:1px solid var(--vdgray)}
-.element{
-	background: var(--black)}
-.detail_body .detail_lst{
-	border-right: 2px solid var(--dgray);
-	background: var(--dgray)}
-.detail_header .spi_wrap,.ly_creator,.detail_body .detail_lst .subj span{
-	-webkit-filter: invert(100%);filter: invert(100%)}
+	.main_daily_wrap {
+		background: black
+	}
 
-/*ACCOUNT*/
-.snb_inner{
-	background:var(--black);
-	color:var(--lgray)}
-.snb_wrap{
-	border-top:1px solid var(--vdgray);
-	border-bottom:1px solid var(--vdgray);
-	background:var(--black)}
-#wrap.header_bdr #header{
-	border-bottom:1px solid var(--vdgray)}
-.card_item .info .subj,
-.card_item .update{
-	color:var(--black)}
-.card_wrap.my .sub_title.v2,
-.card_wrap.my .sub_title.v3,
-.card_wrap.my .sub_title.v4,
-.card_wrap.my .sub_title_wrap,
-.recently_lst .tit,
-.snb a{
-	color:var(--lgray)}
-.account_wrap,
-.sta .lk_creators a::before{
-	-webkit-filter: invert(100%);filter: invert(100%)}
+	.card-item .card-front {
+		background: var(--dgray)
+	}
 
-/*DISCOVER*/
-.discover_lst li{
-	border:1px solid var(--vdgray);
-	background:var(--vgray)}
-.discover_cont_area .tit{
-	color:var(--lgray)}
+	.main_hotnew_wrap {
+		border-top: 1px solid var(--dgray);
+		background: black
+	}
 
-/*CREATORS101*/
-.canvas_info_wrap .canvas_info,
-.creator_cont .title,
-.creator_hub_wrap.money{
-	color:var(--lgray)}
-.thumbnail_lst li{
-	background:var(--black);
-	color:var(--lgray);
-	border:1px solid var(--vdgray)}
-.aside_area,
-.creator_cont .more,
-.creator_hub_wrap.started .publish_step .step1::before,
-.creator_hub_wrap.started .publish_step .step2::before,
-.creator_hub_wrap.started .publish_step .step3::before,
-.creator_hub_wrap.started .publish_step .step4::before,
-.creator_hub_wrap.started .publish_step .step5::before,
-.creator_hub_wrap.started .publish_step .step6::before,
-.creator_hub_wrap.started .publish_step .step7::before{
-	-webkit-filter: invert(100%);filter: invert(100%)}
+	.main_hotnew h2 {
+		color: var(--lgray)
+	}
 
-/*YOUMAYALSOLIKE*/
-.detail_other .lst_type1 li{
-	background: var(--black)}
-.detail_other h2{
-	color:var(--white)}
+	.main_genre_wrap {
+		background: black;
+		border-top: 1px solid var(--dgray)
+	}
 
-/*RECENTS*/
-.recently_area{
-	background:#000000de}
-.recently_cont .subj,
-.recently_area .t_recently2{
-	color:var(--white)}
-.recently_cont .bar{
-	background:var(--vdgray)}
-.recently_area.unfd [class$="_line"]{
-	border-left: 1px solid var(--vdgray)}
+	.btn_search,
+	.recently_area .menu {
+		-webkit-filter: invert(100%);
+		filter: invert(100%)
+	}
 
-/*PUBLISH*/
-.publish_help .subj,
-.publish_title,
-.publish_form_dsc3{
-	color:var(--white)}
-.txtarea,
-.input_txt{
-	border: 1px solid var(--vdgray) !important;
-	background:var(--black)}
-.ico_chkbox,
-.ico_chkbox.on{
-	background-color:var(--dgray)}
-.select1{
-	-webkit-filter: invert(100%);filter: invert(100%)}
-	
-/*LOGIN_FIX*/
-.ly_loginbox.bg_wh,
-.loginbox2{
-	background:var(--dgray)}
-#container.bg,
-.cont_box2 .inner_wrap{
-	background:var(--black)}
-.ly_loginbox.v2.bg_wh .bg_line .line_txt,
-.loginbox2 .bg_line .line_txt{
-	background:var(--dgray);
-	color:white}
-.ly_loginbox.v2.bg_wh .input_box,
-.loginbox2 .loginbox_cont .t_login,.loginbox2 .input_box,
-.ly_loginbox.bg_wh .loginbox_cont .t_login,
-.reset_pw_area strong,
-.cont_box2 .input_box{
-	color:white}
-.ly_loginbox.v2.bg_wh .input_box,
-.loginbox2 .input_box{
-	border-bottom: 1px solid var(--mgray)}
-.loginbox2 .bg_line{
-	background:var(--mgray)}
-.sta .lk_login{
-	border: 1px solid var(--vdgray);
-	background: var(--vdgray);
-	color:var(--white)}
-.ico_resetpw{
-	display:none}
-.ly_loginbox .btn_clse2,
-.age_gate_area .form_area .input_text{
-	filter:invert()}
+	.snb._genre li.on a,
+	.ly_lst_genre.as_genre li:hover a,
+	.snb._genre li:hover a {
+		color: white
+	}
 
-/*GDPR&AGE AGREEMENTS*/
-.gdpr_ly_cookie.on{
-	background:var(--black)}
-.gdpr_ly_cookie .dsc{
-	color:var(--white)}
-.ly_box{
-	background:var(--black)}
-.age_gate_area .form_area .lk_month,
-.age_gate_area .form_area .list_month,
-.gdpr_ly_cookie .btn_clse2,
-.chk_area{
-	filter:invert()}
+	/*MOST POPULAR*/
+	.lst_type1 {
+		border-bottom: 1px solid var(--vdgray)
+	}
+
+	.lst_type1 li {
+		border-top: 1px solid var(--vdgray)
+	}
+
+	.lst_type1 .info_area .author {
+		color: var(--mgray)
+	}
+
+	/*CANVAS*/
+	.main_challenge_wrap {
+		border-top: 1px solid var(--dgray)
+	}
+
+	.main_challenge {
+		background: var(--dgray)
+	}
+
+	.main_challenge .title_area {
+		color: var(--lgray)
+	}
+
+	.ly_lst_genre {
+		background: var(--dgray);
+		border: 1px solid var(--vdgray)
+	}
+
+	/*BOTTOM FOOTER*/
+	#footer {
+		background: black;
+		border-top: 1px solid var(--dgray)
+	}
+
+	.foot_app {
+		background: black;
+		border-bottom: 1px solid var(--dgray)
+	}
+
+	.foot_app .foot_down_msg .txt {
+		color: var(--lgray)
+	}
+
+	.notice_area {
+		background: black;
+		border-bottom: 1px solid var(--dgray)
+	}
+
+	.language .lk_lang,
+	.language .ly_lang {
+		background: black
+	}
+
+	.ico_arr3,
+	.foot_sns {
+		-webkit-filter: invert(100%);
+		filter: invert(100%)
+	}
+
+	/*COMMENTS*/
+	#cbox_module {
+		padding: 10px;
+		border-radius: 10px
+	}
+
+	.u_cbox,
+	.u_cbox .u_cbox_recomm_set .u_cbox_btn_recomm,
+	.u_cbox .u_cbox_recomm_set .u_cbox_btn_unrecomm {
+		background: var(--dgray)
+	}
+
+	.u_cbox_title,
+	.u_cbox .u_cbox_name,
+	.u_cbox .u_cbox_paginate .u_cbox_page {
+		color: var(--lgray)
+	}
+
+	.u_cbox .u_cbox_write .u_cbox_inbox .u_cbox_text {
+		background-color: var(--vdgray);
+		color: var(--lgray)
+	}
+
+	.u_cbox .u_cbox_btn_upload {
+		background: var(--mgray)
+	}
+
+	.u_cbox .u_cbox_write .u_cbox_inbox {
+		background-color: var(--vdgray)
+	}
+
+	.u_cbox .u_cbox_comment_box,
+	.u_cbox .u_cbox_sort {
+		border-bottom: 1px solid var(--vdgray)
+	}
+
+	.u_cbox .u_cbox_paginate .u_cbox_next .u_cbox_ico_page {
+		-webkit-filter: invert(100%);
+		filter: invert(100%)
+	}
+
+	.comment_area .title_comments,
+	.ArticleEditor_Editor_module__editor_content p,
+	#comment_module .wcc_App__root .wcc_SortOrderTabs__root .wcc_SortOrderTab__active,
+	#comment_module .wcc_CommentHeader__identity span {
+		color: white
+	}
+
+	#comment_module .ArticleEditor_Editor_module__editor {
+		background: black
+	}
+
+	#comment_module .wcc_CommentList__list li {
+		border: none;
+		background: var(--dgray);
+		padding: 16px;
+		border-radius: 8px;
+		margin-top: 4px;
+		margin-bottom: 4px
+	}
+
+	#comment_module .wcc_ReplyFolder__root .wcc_CommentList__list li {
+		background: none
+	}
+
+	#comment_module .wcc_ReplyFolder__root .wcc_Editor__root {
+		background-color: black
+	}
+
+	#comment_module .wcc_ReplyFolder__root .wcc_Spoiler__slider {
+		background-color: var(--mgray)
+	}
+
+	#comment_module .wcc_TextContent__content span {
+		color: var(--mgray)
+	}
+
+	#comment_module .wcc_CommentReaction__root .wcc_Button__root,
+	#comment_module .wcc_CommentItem__action .wcc_Button__root {
+		background: var(--vdgray);
+		border: none;
+		border-radius: 8px;
+		color: white
+	}
+
+	#comment_module .wcc_CommentReaction__root .wcc_Button__root.wcc_CommentReaction__active {
+		color: var(--webtoons)
+	}
+
+	#comment_module .wcc_CommentItem__action {
+		padding-bottom: 8px
+	}
+
+	#comment_module .wcc_ReplyFolder__root {
+		background: black
+	}
+
+	#comment_module .wcc_Spoiler__slider {
+		background: var(--vdgray)
+	}
+
+	#comment_module input:checked + .wcc_Spoiler__slider {
+		background: var(--webtoons)
+	}
+
+	/*CREATORS NOTE*/
+	.comment_area .creator_note {
+		border-bottom: 1px solid var(--vdgray)
+	}
+
+	.comment_area .creator_note h2 {
+		color: white
+	}
+
+	/*OTHER EPISODES*/
+	.episode_area {
+		background: var(--vdgray)
+	}
+
+	.episode_lst ul .mask {
+		display: none
+	}
+
+	/*BUTTONS AND TXT STRINGS*/
+	.spi_area .bx,
+	.btn_top,
+	.lst_type1 .ranking_top .pic_area,
+	.lst_type1 .num_ranking,
+	.sta .lk_creators a::before,
+	.viewer_lst .day_info,
+	.ranking_lst.viewer .title_area h2 a,
+	.ranking_lst.viewer .title_area h2 span,
+	.viewer .challenge_spot_inner h3,
+	.ranking_lst.top .title_area h2,
+	.ranking_lst .title_area h2 a,
+	.ranking_lst .title_area h2 span {
+		color: var(--lgray)
+	}
+
+	.viewer .challenge_spot {
+		border-top: 1px solid var(--dgray)
+	}
+
+	.daily_card_item .subj {
+		color: black
+	}
+
+	.daily_head {
+		color: var(--lgray);
+		border-bottom: 1px solid var(--vdgray)
+	}
+
+	.lst_type1 .ranking_top a,
+	.detail_body .detail_lst li>a:hover {
+		background: black
+	}
+
+	.search_area {
+		-webkit-filter: invert(100%);
+		filter: invert(100%)
+	}
+
+	/*COMIC LIST PAGE*/
+	.detail_other.recommnd h2,
+	.aside.detail .grade_area .cnt,
+	.aside.detail .day_info,
+	.aside.detail .summary,
+	.paginate a,
+	.paginate.v2 {
+		color: var(--lgray)
+	}
+
+	.aside.detail {
+		border-left: 2px solid var(--vdgray);
+		background: var(--dgray);
+		color: var(--lgray)
+	}
+
+	.detail_body .detail_install_app {
+		border-top: 1px solid var(--vdgray);
+		background: var(--dgray);
+		color: var(--lgray)
+	}
+
+	.detail_body.banner .detail_lst,
+	.detail_body .detail_lst li:hover,
+	.detail_body,
+	.spi_area .bx {
+		background: var(--dgray)
+	}
+
+	.detail_body .detail_lst {
+		border-right: 2px solid var(--dgray)
+	}
+
+	.detail_body .detail_lst li:first-child {
+		border-top: 1px solid var(--vdgray)
+	}
+
+	.detail_body .detail_lst li {
+		border-bottom: 1px solid var(--vdgray)
+	}
+
+	.element {
+		background: black
+	}
+
+	.detail_body .detail_lst {
+		border-right: 2px solid var(--dgray);
+		background: var(--dgray)
+	}
+
+	.detail_header .spi_wrap,
+	.ly_creator,
+	.detail_body .detail_lst .subj span {
+		-webkit-filter: invert(100%);
+		filter: invert(100%)
+	}
+
+	/*ACCOUNT*/
+	.snb_inner {
+		background: black;
+		color: var(--lgray)
+	}
+
+	.snb_wrap {
+		border-top: 1px solid var(--vdgray);
+		border-bottom: 1px solid var(--vdgray);
+		background: black
+	}
+
+	#wrap.header_bdr #header {
+		border-bottom: 1px solid var(--vdgray)
+	}
+
+	.card_item .info .subj,
+	.card_item .update {
+		color: black
+	}
+
+	.card_wrap.my .sub_title.v2,
+	.card_wrap.my .sub_title.v3,
+	.card_wrap.my .sub_title.v4,
+	.card_wrap.my .sub_title_wrap,
+	.recently_lst .tit,
+	.snb a {
+		color: var(--lgray)
+	}
+
+	.account_wrap,
+	.sta .lk_creators a::before {
+		-webkit-filter: invert(100%);
+		filter: invert(100%)
+	}
+
+	/*DISCOVER*/
+	.discover_lst li {
+		border: 1px solid var(--vdgray);
+		background: var(--vgray)
+	}
+
+	.discover_cont_area .tit {
+		color: var(--lgray)
+	}
+
+	/*CREATORS101*/
+	.canvas_info_wrap .canvas_info,
+	.creator_cont .title,
+	.creator_hub_wrap.money {
+		color: var(--lgray)
+	}
+
+	.thumbnail_lst li {
+		background: black;
+		color: var(--lgray);
+		border: 1px solid var(--vdgray)
+	}
+
+	.aside_area,
+	.creator_cont .more,
+	.creator_hub_wrap.started .publish_step .step1::before,
+	.creator_hub_wrap.started .publish_step .step2::before,
+	.creator_hub_wrap.started .publish_step .step3::before,
+	.creator_hub_wrap.started .publish_step .step4::before,
+	.creator_hub_wrap.started .publish_step .step5::before,
+	.creator_hub_wrap.started .publish_step .step6::before,
+	.creator_hub_wrap.started .publish_step .step7::before {
+		-webkit-filter: invert(100%);
+		filter: invert(100%)
+	}
+
+	/*YOUMAYALSOLIKE*/
+	.detail_other .lst_type1 li {
+		background: black
+	}
+
+	.detail_other h2 {
+		color: white
+	}
+
+	/*RECENTS*/
+	.recently_area {
+		background: #000000de
+	}
+
+	.recently_cont .subj,
+	.recently_area .t_recently2 {
+		color: white
+	}
+
+	.recently_cont .bar {
+		background: var(--vdgray)
+	}
+
+	.recently_area.unfd [class$="_line"] {
+		border-left: 1px solid var(--vdgray)
+	}
+
+	/*PUBLISH*/
+	.publish_help .subj,
+	.publish_title,
+	.publish_form_dsc3 {
+		color: white
+	}
+
+	.txtarea,
+	.input_txt {
+		border: 1px solid var(--vdgray) !important;
+		background: black
+	}
+
+	.ico_chkbox,
+	.ico_chkbox.on {
+		background-color: var(--dgray)
+	}
+
+	.select1 {
+		-webkit-filter: invert(100%);
+		filter: invert(100%)
+	}
+
+	/*ORIGINALS*/
+	.snb_inner li.on a,
+	.snb_inner .snb._type_selector li.on:hover a,
+	.snb_inner .snb._ranking_tab li.on:hover a {
+		color: var(--webtoons) !important;
+		font-weight: 600
+	}
+
+	.snb_inner li.on a::before {
+		background-color: var(--webtoons)
+	}
+
+	.snb_inner .snb._type_selector li:hover a,
+	.snb_inner .snb._ranking_tab li:hover a {
+		color: white
+	}
+
+	/*LOGIN_FIX*/
+	.ly_loginbox.bg_wh,
+	.loginbox2 {
+		background: var(--dgray)
+	}
+
+	#container.bg,
+	.cont_box2 .inner_wrap {
+		background: black
+	}
+
+	.ly_loginbox.v2.bg_wh .bg_line .line_txt,
+	.loginbox2 .bg_line .line_txt {
+		background: var(--dgray);
+		color: white
+	}
+
+	.ly_loginbox.v2.bg_wh .input_box,
+	.loginbox2 .loginbox_cont .t_login,
+	.loginbox2 .input_box,
+	.ly_loginbox.bg_wh .loginbox_cont .t_login,
+	.reset_pw_area strong,
+	.cont_box2 .input_box {
+		color: white
+	}
+
+	.ly_loginbox.v2.bg_wh .input_box,
+	.loginbox2 .input_box {
+		border-bottom: 1px solid var(--mgray)
+	}
+
+	.loginbox2 .bg_line {
+		background: var(--mgray)
+	}
+
+	.sta .lk_login {
+		border: 1px solid var(--vdgray);
+		background: var(--vdgray);
+		color: white
+	}
+
+	.ico_resetpw {
+		display: none
+	}
+
+	.ly_loginbox .btn_clse2,
+	.age_gate_area .form_area .input_text {
+		filter: invert()
+	}
+
+	/*GDPR&AGE AGREEMENTS*/
+	.gdpr_ly_cookie.on {
+		background: black
+	}
+
+	.gdpr_ly_cookie .dsc,
+	.cookies_setting {
+		color: white
+	}
+
+	.ly_box {
+		background: black
+	}
+
+	.age_gate_area .form_area .lk_month,
+	.age_gate_area .form_area .list_month,
+	.gdpr_ly_cookie .btn_clse2,
+	.chk_area {
+		filter: invert()
+	}
 }
