@@ -52,7 +52,7 @@
 	.sta .login {
 		background: var(--dgray);
 		color: var(--lgray);
-		border: 1px solidblack
+		border: 1px solid black
 	}
 
 	.main_daily_wrap {
@@ -276,6 +276,7 @@
 
 	/*BUTTONS AND TXT STRINGS*/
 	.spi_area .bx,
+    .pg_page,
 	.btn_top,
 	.lst_type1 .ranking_top .pic_area,
 	.lst_type1 .num_ranking,
@@ -289,6 +290,10 @@
 	.ranking_lst .title_area h2 span {
 		color: var(--lgray)
 	}
+    
+    .paginate .pg_page[aria-current="true"] {
+        background-color: var(--vdgray)
+    }
 
 	.viewer .challenge_spot {
 		border-top: 1px solid var(--dgray)
@@ -304,7 +309,7 @@
 	}
 
 	.lst_type1 .ranking_top a,
-	.detail_body .detail_lst li>a:hover {
+	.detail_body .detail_list_area li>a:hover {
 		background: black
 	}
 
@@ -335,22 +340,22 @@
 		color: var(--lgray)
 	}
 
-	.detail_body.banner .detail_lst,
-	.detail_body .detail_lst li:hover,
+	.detail_body.banner .detail_list_area,
+	.detail_body .detail_list_area .detail_list_item:hover,
 	.detail_body,
 	.spi_area .bx {
 		background: var(--dgray)
 	}
 
-	.detail_body .detail_lst {
+	.detail_body .detail_list_area {
 		border-right: 2px solid var(--dgray)
 	}
 
-	.detail_body .detail_lst li:first-child {
+	.detail_body .detail_list_area .detail_list_item:first-child {
 		border-top: 1px solid var(--vdgray)
 	}
 
-	.detail_body .detail_lst li {
+	.detail_body .detail_list_area .detail_list_item {
 		border-bottom: 1px solid var(--vdgray)
 	}
 
@@ -358,14 +363,14 @@
 		background: black
 	}
 
-	.detail_body .detail_lst {
+	.detail_body .detail_list_area {
 		border-right: 2px solid var(--dgray);
 		background: var(--dgray)
 	}
 
 	.detail_header .spi_wrap,
 	.ly_creator,
-	.detail_body .detail_lst .subj span {
+	.detail_body .detail_list_area .subj span {
 		-webkit-filter: invert(100%);
 		filter: invert(100%)
 	}
